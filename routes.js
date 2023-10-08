@@ -47,6 +47,12 @@ const requestHandler = (req, res) => {
     res.write('<body>Home</body>')
     res.write('</html>')
 }
+// module.exports = requestHandler
+
+// module.exports = {
+//     'requestHandler': requestHandler,
+//     'someText': 'sham'
+// }
 
 module.exports.requestHandler = requestHandler
 module.exports.someText = 'sham'
