@@ -34,6 +34,7 @@ const requestHandler = (req, res) => {
             const parsedBody = Buffer.concat(body).toString()
             console.log(parsedBody)
             let parsedMessage = parsedBody.split('=')[1]
+
             fs.appendFileSync('message.txt', parsedMessage + '\n', (err) => {
                 console.log(err)
             })
